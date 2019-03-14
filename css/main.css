@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+/* Color schemes */
+.demo-2 {
+	--color-text: #ddedf3;
+	--color-bg: linear-gradient(145deg, #040707, #040707) ;
+
+	
+	--color-link: #ff00ff;
+	--color-link-hover: #00ffff;
+	--color-info: #ddedf3;
+	--color-main-text: #000000;
+	--color-scroll-text: #ff00ff;
+	--font-scroll-text: 'Unica One', monospace;
+	--fontsize-scroll-text: 8vw;
+}
+
+.content__main {
+	color: var(--color-main-text);
+}
+
+.content__text {
+	mix-blend-mode: screen;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 1.1;	
+	font-size: 9vmax;
+	font-family: 'Unica One', monospace;	
+	color: transparent;
+	/* -webkit-text-fill-color: black;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #00ffff; */
+	text-shadow: 0px 0px 15px #009c9c;
+	white-space: nowrap;
+}
+
+canvas{
+	filter: blur(1px)
+	var(--color-text)
+}
+
+

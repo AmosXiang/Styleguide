@@ -89,20 +89,20 @@
 
 //fade out when scrolling ---- https://codepen.io/nickcil/pen/sfutl
 
-$(window).scroll(function(){
-    $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
-    $(".top2").css("opacity", 1 - $(window).scrollTop() / 400);
-  });
+// $(window).scroll(function(){
+//     $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+//     $(".top2").css("opacity", 1 - $(window).scrollTop() / 400);
+//   });
 
-  //facing cite:https://codepen.io/karlovidek/pen/PQaMOd
-  var titleWrap = document.getElementsByClassName('groupImage');
-			document.body.addEventListener('mousemove', cursorPositionHandler);
+  // //facing cite:https://codepen.io/karlovidek/pen/PQaMOd
+  // var titleWrap = document.getElementsByClassName('groupImage');
+	// 		document.body.addEventListener('mousemove', cursorPositionHandler);
 
-			function cursorPositionHandler(e) {
-				var decimalX = e.clientX / window.innerWidth - 0.5;
-				var decimalY = e.clientY / window.innerHeight - 0.5;
-				TweenMax.to(titleWrap, 0.5, { rotationY: 10 * decimalX, rotationX: 10 * decimalY, ease: Quad.easeOut, transformPerspective: 700, transformOrigin: "center" });
-			}
+	// 		function cursorPositionHandler(e) {
+	// 			var decimalX = e.clientX / window.innerWidth - 0.5;
+	// 			var decimalY = e.clientY / window.innerHeight - 0.5;
+	// 			TweenMax.to(titleWrap, 0.5, { rotationY: 10 * decimalX, rotationX: 10 * decimalY, ease: Quad.easeOut, transformPerspective: 700, transformOrigin: "center" });
+	// 		}
 
 //glitch
 
@@ -111,7 +111,7 @@ $(window).scroll(function(){
 const data = {
   font: {
     family: 'Unica One',
-    size: 280,
+    size: 220,
     weight: 'bold'
   },
   colors: ['#ff00ff', '#00ffff', '#ddedf3'],
@@ -134,7 +134,7 @@ var ctx = canvas.init();
 
 const pointer = {
   x: 0, y: 0,
-  r: 210
+  r: 180
 }
 class CHAR {
   constructor(char, x, y, color, layer) {
@@ -255,5 +255,5 @@ const run = () => {
   
   CHAR.draw();
 }
-setTimeout(run, 2500);
+setTimeout(run, 100);
 
