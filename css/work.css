@@ -75,13 +75,13 @@
   .clip-wrap {
     text-align: left;
     margin-left: 20%; 
-    color: rgb(255, 255, 255); 
+   
   }
 
   .clip-wrap a{
     text-decoration: none;
     margin-right: 20px;;
- 
+    color: rgb(255, 255, 255); 
   }
   
   .element {
