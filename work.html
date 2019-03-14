@@ -1,0 +1,156 @@
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Hao Xiang's work</title>
+    <meta name="description" content="Works of Hao Xiang">
+    <meta name="keywords" content="game design">
+    <meta name="author" content="Hao Xiang">
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <link href="css/work.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- logo -->
+    <div class="clip-wrap">
+        <nav class="navBar">
+            <img src="img/logo.gif" alt="demo-clip-css" class="element" width="150" height="150">
+            <a href="home.html">Home</a>
+            <a href="work.html">Work</a>
+            <a href="work2.html">Work#2</a>
+        </nav>
+
+    </div>
+
+    <svg class="clip-svg" width="0" height="0">
+        <defs>
+            <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
+                <polygon points="0 1, 0 0, 1 0, 0.8 1" />
+            </clipPath>
+        </defs>
+    </svg>
+    <div class="workVideo">
+        <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video -->
+        <video width="600" controls>
+            <source src="vido/playTest.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <div class="videoTitle">
+        <h2>Earthquake Narrative Simulation </h2>
+    </div>
+    <div>
+        <h3>Concept & Goal</h3>
+    </div>
+
+    <div class="hoverP column">
+        <div class="content">
+            An immersive educational simulation that create the experience of an earthquake scenario.
+            Our project provides different form of intuitive interaction between the user and the scene.
+            Aimed to aid the annual ShakeOut BC drill for people to experience a simulated
+            earthquake environment to practice and get prepared in case of the real Earthquake.
+        </div>
+        <div>
+            <div>
+                <figure><img src="img/storyBoard.jpg" /></figure>
+                <span>Concept of game flow</span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>Interaction & VR Prototype</h3>
+    </div>
+    <div class="hoverP column">
+        <div>
+            <figure><img src="img/introOperation.jpg" /></figure>
+            <span>Operation guide</span>
+        </div>
+        <div class="movingRight">
+            <div class="content">
+                <h4>3D GUI</h4>
+                We made the decision to guide audiences in an immersive way that creating a 3D space for them to
+                explore.
+                Following with the arrow and instructions, the audience get familiar with the basic operations.
+                The guide light will lead the audience to the correct position for stepping into the next scene.
+
+            </div>
+        </div>
+    </div>
+
+    <div class="hoverP column">
+
+
+        <div class="content">
+            <h4> The VR inside the VR</h4>
+            Passing through the guide scene, the audience enters a house and he/she will be guide to the table.
+            A VR helmet on the table will bring the audience to another VR game.
+            The audience was forced to exist the game and a breaking new pop up to claim that the earthquake is coming.
+
+        </div>
+
+        <div class="movingRight">
+            <div>
+                <figure><img src="img/guideLight.jpg" /></figure>
+                <span>Game flow</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hoverP column">
+        <div class="content">
+            <h4> Education of earthquake</h4>
+            The audience was guide through the instructions on the wall as well to learn about how to save his/her life
+            during an earthquake.
+        </div>
+
+        <div class="movingRight">
+            <div>
+                <figure><img src="img/guideLight2.jpg" /></figure>
+                <span>Earthquake guidelines</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hoverP column">
+        <div>
+            <figure><img src="img/Exit.jpg" /></figure>
+            <span>Exit using the key</span>
+        </div>
+        <div class="movingRight">
+            <div class="content">
+                <h4>Small puzzle</h4>
+                When the earthquake ends, the audience needs to find a flashlight in order to find the key in the dark
+                environment. As the audience found the key, he/she can escape the house by following the guide light.
+            </div>
+        </div>
+    </div>
+
+    <div class="contentReflection">
+        <h4> Issues encountered during the implementation</h4>
+        The camera shake we first implemented for simulating the earthquake scene was causing motion sickness to our
+        playtesters. 2D GUI is also not appearing on the oculus to provide any information.
+    </div>
+
+    <div class="contentReflection">
+        <h4>Workarounds, solutions</h4>
+        Use animation to animate the whole scene to shake and add rigid-body to each component in the scene to make
+        them react to the “physics” during the earthquake scenario. We also made 3D text and glowing signs to guide the
+        player around the scenes.
+    </div>
+
+    <div class="contentReflection">
+        <h4>Thoughts on final event</h4>
+        The event was welcoming to everyone that cross-by and would like to experience virtual reality. Our team is
+        happy to see so many people are willing to participate our user study and test our project.
+    </div>
+
+    <footer>
+        <p> © 2019 portfolio by Hao Xiang (Amos) </p>
+    </footer>
+</body>
+
+</html>

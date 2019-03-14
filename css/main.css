@@ -11,7 +11,7 @@
 	--color-info: #ddedf3;
 	--color-main-text: #000000;
 	--color-scroll-text: #ff00ff;
-	--font-scroll-text: 'Unica One', monospace;
+	--font-scroll-text: 'Oswald', sans-serif;
 	--fontsize-scroll-text: 8vw;
 }
 
@@ -25,7 +25,7 @@
 	text-transform: uppercase;
 	line-height: 1.1;	
 	font-size: 9vmax;
-	font-family: 'Unica One', monospace;	
+	font-family: 'Oswald', sans-serif;
 	color: transparent;
 	/* -webkit-text-fill-color: black;
 	-webkit-text-stroke-width: 1px;
