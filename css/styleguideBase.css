@@ -488,4 +488,14 @@ canvas{
 	padding: calc(10vmax);
 	font-weight: bold;
 	color:white;
-}	 
+}	
+
+.Bio{
+	display: inline-block;
+	font-family: 'Unica One', monospace ;
+	position: absolute;
+	font-size: 5vmax;
+	padding: calc(10vmax);
+	font-weight: bold;
+	color:white;
+}	
