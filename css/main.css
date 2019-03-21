@@ -4,11 +4,9 @@
 
   
 
-.demo-2 {
+.varibal {
 	--color-text: #ddedf3;
 	--color-bg: linear-gradient(145deg, #040707, #040707) ;
-
-	
 	--color-link: #ff00ff;
 	--color-link-hover: #00ffff;
 	--color-info: #ddedf3;

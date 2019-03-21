@@ -69,7 +69,7 @@
 
             observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    if ( entry.intersectionRatio > 0.5 ) {
+                    if ( entry.intersectionRatio > 0.9 ) {
                         const newcurrent = sections.indexOf(entry.target);
                         if ( newcurrent === current ) return;
                         const direction = newcurrent > current;
@@ -80,7 +80,7 @@
                         current = newcurrent;
                     }
                 });
-            }, { threshold: 0.5 });
+            }, { threshold: 0.9 });
 
             sections.forEach(section => allentries.push(new Entry(section)));
         }
