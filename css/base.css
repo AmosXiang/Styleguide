@@ -221,6 +221,9 @@ main {
 .content__contact {
 	position: absolute;
 	top: calc(var(--fontsize-scroll-text) * 1.5 + 6vmax);
+	left: 20%;
+	margin-bottom: 25%;
+	font-size: 120;
 }
 
 .content__main span {
@@ -439,6 +442,13 @@ canvas{
 		padding-top: 55%;
 		left:10%;
 	}
+	.content__img {
+		position: relative;
+		display: block;
+		max-width: 100%;
+		margin: 0 0 0 auto;
+	}
+
   }
 
   @media screen and (max-width: 480px) {
@@ -478,4 +488,6 @@ canvas{
 		padding-top: 82%;
 		left:7%;
 	}
+
+
   }

@@ -40,5 +40,9 @@ canvas{
 	filter: blur(1px)
 	var(--color-text)
 }
-
+@media screen and (max-width: 480px) {
+	.content__text {
+		font-size: 6vmax;
+	}
+}
 
