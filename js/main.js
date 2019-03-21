@@ -125,7 +125,7 @@ else{
 const data = {
   font: {
     family: 'Unica One',
-    size: 280,
+    size: canvasFontSzie,
     weight: 'bold'
   },
   colors: ['#ff00ff', '#00ffff', '#ddedf3'],
