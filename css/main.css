@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 /* Color schemes */
+
+  
+
 .demo-2 {
 	--color-text: #ddedf3;
 	--color-bg: linear-gradient(145deg, #040707, #040707) ;
@@ -13,6 +16,7 @@
 	--color-scroll-text: #ff00ff;
 	--font-scroll-text: 'Oswald', sans-serif;
 	--fontsize-scroll-text: 8vw;
+	--my-variable-name:50;
 }
 
 .content__main {

@@ -104,7 +104,21 @@ $(window).scroll(function(){
 				TweenMax.to(titleWrap, 0.5, { rotationY: 10 * decimalX, rotationX: 10 * decimalY, ease: Quad.easeOut, transformPerspective: 700, transformOrigin: "center" });
 			}
 
-//glitch
+// change canvas font size
+window.onresize = function(){ location.reload(); }
+
+var canvasFontSzie ;
+
+if ( $(window).width() > 680) {      
+  canvasFontSzie = 280;
+} 
+else if ( $(window).width() > 400){
+  canvasFontSzie = 180;
+}
+else{
+  canvasFontSzie = 120;
+}
+
 
 // name title cite: https://codepen.io/christhuong/pen/XxzNWK
 

@@ -482,20 +482,13 @@ canvas{
 }
 .LogoImage{
 	display: inline-block;
-	font-family: 'Unica One', monospace ;
+	font-family:  'Oswald', sans-serif;
 	position: absolute;
-	font-size: 9vmax;
+	font-size: 2vmax;
 	padding: calc(10vmax);
 	font-weight: bold;
 	color:white;
+	left:30%;
+	top:400px;
 }	
 
-.Bio{
-	display: inline-block;
-	font-family: 'Unica One', monospace ;
-	position: absolute;
-	font-size: 5vmax;
-	padding: calc(10vmax);
-	font-weight: bold;
-	color:white;
-}	

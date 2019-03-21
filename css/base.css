@@ -401,3 +401,66 @@ canvas{
  58%{  transform:translate(0px,0px) skew(0deg);}
 }
 	 
+@media screen and (max-width: 50em) {
+	.groupImage{
+		position:relative;
+		font-family:  'Unica One', monospace;
+	}
+	
+	#img2 img {
+		position: absolute;
+		width: 360px;
+		-webkit-clip-path: polygon(100% 100%,0 100%,50% 0);
+		clip-path: polygon(100% 100%,0 100%,50% 0);
+		/* -webkit-mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)));
+		mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0))); */
+		height: 408px;
+		object-fit: cover;
+		margin-left: -1%;
+		bottom: -26rem;
+	  transform: rotate(180deg);
+	}
+	canvas{
+		position: absolute;
+		margin-top: 18rem;
+		width:70%;
+		top:0%;
+		right:15%;
+		filter: blur(2px);
+		opacity: 1;
+		-webkit-animation: fade 0.2s linear 2.5s;
+		animation: fade 0.2s linear 2.5s;
+	}
+  }
+
+  @media screen and (max-width: 480px) {
+	.groupImage{
+		position:relative;
+		font-family:  'Unica One', monospace;
+	}
+	
+	#img2 img {
+		position: absolute;
+		width: 360px;
+		-webkit-clip-path: polygon(100% 100%,0 100%,50% 0);
+		clip-path: polygon(100% 100%,0 100%,50% 0);
+		/* -webkit-mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)));
+		mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0))); */
+		height: 408px;
+		object-fit: cover;
+		margin-left: -15%;
+		bottom: -26rem;
+	  transform: rotate(180deg);
+	}
+	canvas{
+		position: absolute;
+		margin-top: 10rem;
+		width:100%;
+		top:10%;
+		right:0%;
+		filter: blur(2px);
+		opacity: 1;
+		-webkit-animation: fade 0.2s linear 2.5s;
+		animation: fade 0.2s linear 2.5s;
+	}
+  }
