@@ -94,29 +94,32 @@ $(window).scroll(function(){
     $(".top2").css("opacity", 1 - $(window).scrollTop() / 400);
   });
 
-  //facing cite:https://codepen.io/karlovidek/pen/PQaMOd
-  var titleWrap = document.getElementsByClassName('groupImage');
-			document.body.addEventListener('mousemove', cursorPositionHandler);
+  // facing cite:https://codepen.io/karlovidek/pen/PQaMOd
+  // var titleWrap = document.getElementsByClassName('groupImage');
+	// 		document.body.addEventListener('mousemove', cursorPositionHandler);
 
-			function cursorPositionHandler(e) {
-				var decimalX = e.clientX / window.innerWidth - 0.5;
-				var decimalY = e.clientY / window.innerHeight - 0.5;
-				TweenMax.to(titleWrap, 0.5, { rotationY: 10 * decimalX, rotationX: 10 * decimalY, ease: Quad.easeOut, transformPerspective: 700, transformOrigin: "center" });
-			}
+	// 		function cursorPositionHandler(e) {
+	// 			var decimalX = e.clientX / window.innerWidth - 0.5;
+	// 			var decimalY = e.clientY / window.innerHeight - 0.5;
+	// 			TweenMax.to(titleWrap, 0.5, { rotationY: 10 * decimalX, rotationX: 10 * decimalY, ease: Quad.easeOut, transformPerspective: 700, transformOrigin: "center" });
+	// 		}
 
 // change canvas font size
 window.onresize = function(){ location.reload(); }
 
 var canvasFontSzie ;
-
+var range;
 if ( $(window).width() > 680) {      
   canvasFontSzie = 280;
+  range = 210;
 } 
-else if ( $(window).width() > 400){
+else if ( $(window).width() > 480){
   canvasFontSzie = 180;
+  range = 180;
 }
 else{
   canvasFontSzie = 120;
+  range = 120;
 }
 
 
@@ -148,7 +151,7 @@ var ctx = canvas.init();
 
 const pointer = {
   x: 0, y: 0,
-  r: 210
+  r: range
 }
 class CHAR {
   constructor(char, x, y, color, layer) {
@@ -269,5 +272,5 @@ const run = () => {
   
   CHAR.draw();
 }
-setTimeout(run, 2500);
+setTimeout(run, 250);
 

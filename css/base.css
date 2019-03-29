@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family: 'Unica One', sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family: 'Unica One', sans-serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
 *,
 *::after,
 *::before {
 	box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
@@ -64,12 +62,6 @@ button:focus {
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
 }
 
-@keyframes loaderAnim {
-	to {
-		opacity: 1;
-		transform: scale3d(0.5,0.5,1);
-	}
-}
 
 .hidden {
 	position: absolute;
@@ -77,15 +69,6 @@ button:focus {
 	width: 0;
 	height: 0;
 	pointer-events: none;
-}
-
-/* Icons */
-.icon {
-	display: block;
-	width: 1.5em;
-	height: 1.5em;
-	margin: 0 auto;
-	fill: currentColor;
 }
 
 main {
@@ -161,7 +144,6 @@ main {
 	pointer-events: none;
 }
 
-
 .content {
 	position: relative;
 	display: block;
@@ -210,7 +192,7 @@ main {
 .content__text {
 	color: var(--color-scroll-text);
 	font-size: var(--fontsize-scroll-text);
-	font-family: var(--font-scroll-text);
+	font-family: 'Unica One', sans-serif;
 	margin: 0;
 	line-height: 1;
 	text-transform: lowercase;
@@ -298,7 +280,88 @@ main {
 }
 .groupImage{
 	position:relative;
-	font-family:  'Unica One', monospace;
+	font-family: 'Unica One', sans-serif;
+}
+
+#img1 img {
+	position: absolute;
+	width: 20%;
+	object-fit: cover;
+	margin-left: 6%;
+	bottom: 0rem;
+	opacity: 0;
+	-webkit-animation: slide1 0.5s forwards;
+  animation: slide1 1.5s forwards ease-in-out, fadein 2.5s forwards ease-in-out; 
+
+}
+
+
+#img1-1 img {
+	position: absolute;
+	width: 12%;
+	object-fit: cover;
+	margin-left: 12%;
+	bottom: 0rem;
+	opacity: 0;
+	-webkit-animation: slide1-1 0.5s forwards;
+  animation: slide1-1 1.5s forwards ease-in-out, fadein 2.5s forwards ease-in-out; 
+	animation-delay: 1s;
+}
+
+#imgTopBar img{
+	position: absolute;
+	width:6px;
+	left:73vw;
+	bottom: -5rem;
+	opacity: 0;
+	-webkit-animation: slideTopBar 0.5s forwards, fadeinT 2.5s forwards ease-in-out;
+  animation: slideTopBar 1.5s forwards ease-in-out, fadeinT 2.5s forwards ease-in-out; 
+	animation-delay: 1s;
+}
+
+#employer{
+	position: absolute;
+	left:73vw;
+	bottom: -15rem;
+	opacity: 0;
+	-webkit-animation: slideTopText 0.5s forwards, fadein 2.5s forwards ease-in-out;
+	animation: slideTopText 1.5s forwards ease-in-out, fadein 2.5s forwards ease-in-out; 
+	animation-delay: 1s;
+}
+
+#img1-2 img {
+	position: absolute;
+	width: 35%;
+	object-fit: cover;
+	margin-left: 58%;
+	bottom: -50rem;
+	opacity: 0;
+	-webkit-animation: slide2 0.5s forwards;
+    animation: slide2 1.5s forwards ease-in-out, fadein 2.5s forwards ease-in-out; 
+}
+
+#imgBotDot img{
+	position: absolute;
+	width: 15%;
+	object-fit: cover;
+	margin-left: 110%;
+	bottom: -50rem;
+	opacity: 0;
+	-webkit-animation: slideFromR 0.5s forwards, fadein 3.5s forwards ease-in-out;
+    animation: slideFromR 1.5s forwards ease-in-out, fadein 3.5s forwards ease-in-out; 
+	animation-delay: 1s;
+}
+
+#img1-3 img {
+	position: absolute;
+	object-fit: cover;
+	left:65vw;
+	width: 50px;
+	bottom: -8rem;
+	opacity: 0.5;
+	animation: fadein 3s ease-in-out infinite; 
+	animation-direction: alternate-reverse;
+
 }
 
 #img2 img {
@@ -306,119 +369,115 @@ main {
 	width: 450px;
 	-webkit-clip-path: polygon(100% 100%,0 100%,50% 0);
 	clip-path: polygon(100% 100%,0 100%,50% 0);
-	/* -webkit-mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)));
-	mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0))); */
 	height: 510px;
 	object-fit: cover;
-	margin-left: 42%;
+	margin-left: 36%;
 	bottom: -26rem;
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
+
+@media screen and (max-width: 1280px) {
+	#img1-3 img {
+		left:70vw;
+	}
+	#imgTopBar{
+		left:78vw;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	#img1-3 img {
+		left:75vw;
+	}
+	#imgTopBar{
+		left:83vw;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	#img1-3 img {
+		left:78vw;
+	}
+	#imgTopBar{
+		left:86vw;
+	}
+}
+
 canvas{
 	position: absolute;
 	margin-top: 6rem;
 	width:70%;
 	top:0%;
-	right:18%;
+	right:24%;
 	filter: blur(2px);
 	opacity: 1;
-	-webkit-animation: fade 0.2s linear 2.5s;
-	animation: fade 0.2s linear 2.5s;
-}
-/* cite for animation: https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out */
-@keyframes fade {
-  0%,100% { opacity: 0 }
-  50% { opacity: 1 }
 }
 
-@-webkit-keyframes fadeinout {
-0% { opacity: 1; }
-90%  {opacity: 1;}
-}
-
-@keyframes fadeinout {
-0% { opacity: 1; }
-90%  {opacity: 1;}
-}
-
-/* -------------------- intro name & cite: https://codepen.io/samarkandiy/pen/nyLsx*/
-#cyber-speaks {
-	
-	font-family: 'Unica One', monospace;
-	font-size: 160px;
-	font-weight: bold;
-	color: transparent;
-	text-shadow: 0px 0px 1px #ffffff;;
-	white-space: nowrap;	
-	margin: 10px 0 0 10px;
-	overflow: hidden;
-	width: 2em;
-	animation: type	 .5s steps(60, end) ;
-
-	
-  }
-
-  #cyber-speaks:nth-child(2){
-	animation: type2 1s steps(60, end);
-  }
- 
-  #cyber-speaks span{
-	animation: blink 1s infinite;
-  }
-
-  @keyframes type{ 
-	from { width: 0; } 
-  } 
-  
-  @keyframes type2{
-	0%{width: 0;}
-	50%{width: 0;}
-	100%{ width: 100; } 
-  } 
-  
-  @keyframes blink{
-	to{opacity: .0;}
-  }
-  
-  ::selection{
-	background: black;
-  }
-  /* -------------------- intro name close --------------------  */
-  
-
-	.elementToFadeInAndOut {
-		position: absolute;
-		padding-top: 5%;
-		left:28%;
-		-webkit-animation: fadeinout 2.5s linear, glitch   steps(60, end) 2s;
-		animation: fadeinout 2.5s linear, glitch   steps(60, end) 2s;
-		opacity: 0;
-	}
-	/* https://codepen.io/MrDoctype/pen/oLrBEv */
-	@keyframes glitch{
-	 6%{transform:translate(4px,-10px) skewX(3240deg);}
-	 9%{ transform:translate(0px,0px) skewX(0deg);}
-	 2% , 54%{transform:translateX(0px) skew(0deg);}
-	 55%{  transform:translate(-2px,6px) skew(-5530deg);}
-	 56%{ transform:translate(0px,0px) skew(0deg);}
- 58%{  transform:translate(0px,0px) skew(0deg);}
-}
-	 
 @media screen and (max-width: 50em) {
 
 
 	.groupImage{
 		position:relative;
-		font-family:  'Unica One', monospace;
+		font-family: 'Unica One', sans-serif;
 	}
 	
+	#img1 img {
+		position: absolute;
+		width: 25%;
+		object-fit: cover;
+		margin-left: 0%;
+		bottom: -40rem;
+		opacity: 0;
+		-webkit-animation: slideS 0.5s forwards;
+		animation: slideS 1.5s forwards ease-in-out, fadein 2.5s forwards ease-in-out; 
+		transform: rotate(90deg);
+	}
+
+	@-webkit-keyframes slideS {
+		100% { margin-left:18%;}
+	}
+	
+	@keyframes slideS {
+		100% { margin-left: 18%;}
+	}
+
+	#img1-2 img {
+		position: absolute;
+		width: 35%;
+		object-fit: cover;
+		margin-left: 58%;
+		bottom: -50rem;
+		opacity: 0;
+		-webkit-animation: slide2-1  0.5s forwards;
+		animation: slide2-1  1.5s forwards ease-in-out, fadein 2.5s forwards ease-in-out; 
+	}
+	
+	
+	@-webkit-keyframes slide2-1 {
+		100% { bottom: -25rem;}
+	}
+	
+	@keyframes slide2-1 {
+		100% { bottom: -25rem;}
+	}
+
+	#img1-3 img {
+		left:45vw;
+		width: 40px;
+		bottom: -10rem;
+	}
+
+	#imgBotDot img{
+		bottom: -30rem;
+		-webkit-animation: slideFromR-1 0.5s forwards, fadein 3.5s forwards ease-in-out;
+    animation: slideFromR-1 1.5s forwards ease-in-out, fadein 3.5s forwards ease-in-out; 
+	}
+
 	#img2 img {
 		position: absolute;
 		width: 360px;
 		-webkit-clip-path: polygon(100% 100%,0 100%,50% 0);
 		clip-path: polygon(100% 100%,0 100%,50% 0);
-		/* -webkit-mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)));
-		mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0))); */
 		height: 408px;
 		object-fit: cover;
 		margin-left: -1%;
@@ -433,8 +492,8 @@ canvas{
 		right:15%;
 		filter: blur(2px);
 		opacity: 1;
-		-webkit-animation: fade 0.2s linear 2.5s;
-		animation: fade 0.2s linear 2.5s;
+		/* -webkit-animation: fade 0.2s linear 2.5s;
+		animation: fade 0.2s linear 2.5s; */
 	}
 
 	.elementToFadeInAndOut {
@@ -447,16 +506,26 @@ canvas{
 		display: block;
 		max-width: 100%;
 		margin: 0 0 0 auto;
-	}
+		}
+  }
 
+  @media screen and (max-width: 700px) {	
+	#img1-3 img {
+		left:50vw;
+		}
+  }
+
+  @media screen and (max-width: 600px) {	
+	#img1-3 img {
+		left:60vw;
+		}
   }
 
   @media screen and (max-width: 480px) {
 
-	
 	.groupImage{
 		position:relative;
-		font-family:  'Unica One', monospace;
+		font-family: 'Unica One', sans-serif;
 	}
 	
 	#img2 img {
@@ -464,14 +533,17 @@ canvas{
 		width: 360px;
 		-webkit-clip-path: polygon(100% 100%,0 100%,50% 0);
 		clip-path: polygon(100% 100%,0 100%,50% 0);
-		/* -webkit-mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)));
-		mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0))); */
 		height: 408px;
 		object-fit: cover;
 		margin-left: -15%;
 		bottom: -26rem;
 	  transform: rotate(180deg);
 	}
+
+	#img1-3 img {
+		left:70vw;
+	}
+	
 	canvas{
 		position: absolute;
 		margin-top: 10rem;
@@ -480,8 +552,6 @@ canvas{
 		right:0%;
 		filter: blur(2px);
 		opacity: 1;
-		-webkit-animation: fade 0.2s linear 2.5s;
-		animation: fade 0.2s linear 2.5s;
 	}
 	.elementToFadeInAndOut {
 		position: absolute;
@@ -491,3 +561,97 @@ canvas{
 
 
   }
+
+  @-webkit-keyframes slide1 {
+    100% { bottom: -15rem;}
+}
+
+@keyframes slide1 {
+    100% { bottom: -15rem;}
+}
+
+
+@-webkit-keyframes slide1-1 {
+    100% { bottom: -7rem;}
+}
+
+@keyframes slide1-1 {
+    100% { bottom: -7rem;}
+}
+
+@-webkit-keyframes slideTopBar {
+    100% { bottom: 0rem;}
+}
+
+@keyframes slideTopBar {
+    100% { bottom: 0rem;}
+}
+
+@-webkit-keyframes slideTopText {
+	100% { bottom: -5rem;}
+}
+
+@keyframes slideTopText {
+	100% { bottom: -8rem;}
+}
+
+@keyframes fadein {
+    100% { opacity: 1;}
+}
+
+
+@keyframes fadeinT {
+	100% { opacity: .7;}
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+@-webkit-keyframes slide2 {
+    100% { bottom: -35rem;}
+}
+
+@keyframes slide2 {
+    100% { bottom: -35rem;}
+}
+
+@-webkit-keyframes slideFromR {
+	100% { bottom: -35rem;
+		margin-left: 80%;}
+}
+
+@keyframes slideFromR {
+	100% { bottom: -35rem;
+		margin-left: 80%;}
+}
+
+@-webkit-keyframes slideFromR-1 {
+	100% { bottom: -25rem;
+		margin-left: 80%;}
+}
+
+@keyframes slideFromR-1 {
+	100% { bottom: -25rem;
+		margin-left: 80%;}
+}
+/* cite for animation: https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out */
+@keyframes fade {
+	0%,100% { opacity: 0 }
+	50% { opacity: 1 }
+  }
+  
+  @-webkit-keyframes fadeinout {
+  0% { opacity: 1; }
+  90%  {opacity: 1;}
+  }
+  
+  @keyframes fadeinout {
+  0% { opacity: 1; }
+  90%  {opacity: 1;}
+  }
+
+	   

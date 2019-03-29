@@ -13,7 +13,6 @@
   <link href="https://fonts.googleapis.com/css?family=Abel|Unica+One|Montserrat|Anton" rel="stylesheet">
   <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view my portfolio in a modern browser that supports CSS Variables.");</script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
 
 </head>
@@ -22,12 +21,28 @@
   <main>
     <div class="content">
       <header class="codrops-header">
-        <h1 class="codrops-header__title">Hao's portfolio</h1>
+        <!-- <h1 class="codrops-header__title">Hao's portfolio</h1>
         <nav class="navigation">
           <a class="navi" href="work.html"><span>UX Design</span></a>
           <a class="navi" href="work2.html"><span>3D Animation</span></a>
           <a class="navi" href="styleguide.html"><span>StyleGuide</span></a>
-        </nav>
+        </nav> -->
+        <div id="img1-3">
+          <img src="img/head-dec.png" alt="img">
+        </div>
+
+        <div id="imgTopBar">
+          <img id="topbar" src="img/vertical.png" alt="topDecorationBar">
+        </div>
+
+        <div id="employer">
+          <h3>
+            UX/UI Designer
+          </h3>
+          <h3>
+            3D Animator
+          </h3>
+        </div>
       </header>
     </div>
     <div class="content">
@@ -35,19 +50,29 @@
 
         <h2 class="content__text" id="hello"></h2>
 
-        <div class="groupImage top ">
-          <!-- 
-          <div id="imgb"><img src="img/bk.png" alt="img"></div> -->
+        <div class="groupImage">
+          <div id="img1">
+            <img src="img/topD1.png" alt="topDecorationShpere">
+          </div>
 
-          <div id="img2"><img src="img/logo5.gif" alt="img"></div>
+          <div id="img1-1">
+            <img src="img/topD2.png" alt="topDecorationRect">
+          </div>
+
+          <div id="img1-2">
+            <img src="img/bott-dec.png" alt="img">
+          </div>
+
+          <div id="imgBotDot">
+            <img src="img/dot_bot.png" alt="bottomDotDecoration">
+          </div>
+
+          <div id="img2">
+            <img src="img/logo5.gif" alt="img">
+          </div>
 
           <canvas></canvas>
-
-          <div class="elementToFadeInAndOut">
-            <h2 id="cyber-speaks">I'm<span>?_</span></h2>
-          </div>
         </div>
-
       </div>
       <div class="content__section">
         <a class="content__link"><img class="content__img" src="img/warning.jpg" alt="img" /></a>
@@ -67,6 +92,11 @@
               I passionate about the creation of immersive worlds through game design. I believe that
               creating gaming experience with good interactive storytelling provides audiences with breakthtaking and
               evocative experience.
+            </p>
+            <p>
+              Contact:<br />
+              E-mail: amosx@sfu.ca<br />
+              Phone # :778-998-6666
             </p>
           </div>
         </div>
