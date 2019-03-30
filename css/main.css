@@ -35,4 +35,219 @@ canvas{
 		font-size: 6vmax;
 	}
 }
-
+/* button https://codepen.io/matth12377/pen/ALjAGW */
+.button_container {
+    top: 50%;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .name_container {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  #menu_name {
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    letter-spacing: 5px;
+    -webkit-transition: all .25s ease;
+    tranisition: all .25s ease;
+  }
+  
+  #open_name {
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    letter-spacing: 5px;
+    -webkit-transition: all .25s ease;
+    tranisition: all .25s ease;
+  }
+  
+  .button_container:hover #menu_name {
+    left: 75%;
+    opacity: 0;
+  }
+  
+  .button_container:hover #open_name {
+    left: 52%;
+    opacity: 1;
+  }
+  
+  #line_one,
+  #line_two {
+    width: 0px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+  }
+  
+  #line_one {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-tranisition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  #line_two {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    -webkit-tranisition: all .5s .5s ease;
+    transition: all .5s .5s ease;
+  }
+  
+  .button_container.active #line_one {
+    width: 50px;
+    opacity: 1;
+  }
+  
+  .button_container.active #line_two {
+    width: 50px;
+    opacity: 1;
+  }
+  
+  .button_container.active .name_container {
+    opacity: 0;
+  }
+  
+  .menu {
+    width: 150px;
+    height: 50vh;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+      -webkit-transform: translate(0%, 50%);
+    transform: translate(0%, 50%);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  .menu nav {
+    position: fixed;
+    top: 50%;
+    text-align: right;
+    width: inherit;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
+  
+  .menu nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    margin-right: 20px;
+    text-align: right;
+    -webkit-transform: translate(0, 100px);
+    transform: translate(0, 100px);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    opacity: 0;
+  }
+  
+  .menu nav a:after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 0;
+    height: 2px;
+    margin-top: -0.6em;
+    background: #fff;
+    transform-origin: center left;
+    transition: width 0.5s ease;
+  }
+  
+  .menu nav a:hover:after {
+    width: 120px;
+  }
+  
+  .menu.open {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+  }
+  
+  .menu.open a {
+    opacity: 1;
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+  }
+  
+  .menu.open a:nth-of-type(2) {
+    -webkit-transition-delay: .3s;
+    transition-delay: .4s;
+  }
+  
+  .menu.open a:nth-of-type(3) {
+    -webkit-transition-delay: .3s;
+    transition-delay: .5s;
+  }
+  
+  .menu.open a:nth-of-type(4) {
+    -webkit-transition-delay: .3s;
+    transition-delay: .6s;
+  }
+  
+  .menu.open a:nth-of-type(5) {
+    -webkit-transition-delay: .3s;
+    transition-delay: .7s;
+  }
+  
+  .menu .open {
+    width: 150px;
+  }
+  
+  .icon_container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    width: inherit;
+    text-align: right;
+    padding: 20px;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+  }
+  
+  .icon_container i {
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu.open .icon_container {
+    opacity: 1;
+    -webkit-transition-delay: .7s;
+    transition-dealy: .7s;
+  }

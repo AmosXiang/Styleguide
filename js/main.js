@@ -273,4 +273,10 @@ const run = () => {
   CHAR.draw();
 }
 setTimeout(run, 250);
-
+//button
+window.onload = function() {
+  $('.button_container').click(function() {
+    $('.button_container').toggleClass('active');
+    $('.menu').toggleClass('open');
+  });
+};

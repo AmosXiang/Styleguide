@@ -76,7 +76,7 @@ main {
 }
 
 /* Header */
-.codrops-header {
+.menu_header {
 	padding: calc(6vmax - 0.25rem);
 	position: relative;
 	z-index: 100;
@@ -86,7 +86,7 @@ main {
 	flex-wrap: wrap;
 }
 
-.codrops-header::before {
+.menu_header::before {
 	content: 'Your browser does not support Intersection Observer API';
 	position: absolute;
 	background: red;
@@ -100,17 +100,9 @@ main {
 	z-index: 1000;
 }
 
-.ioapi .codrops-header::before {
+.ioapi .menu_header::before {
 	display: none;
 }
-
-.codrops-header__title {
-	font-size: 1em;
-	font-weight: bold;
-	margin: 0;
-	padding: 0 1em;
-}
-
 .codrops-links {
 	position: relative;
 	display: flex;
@@ -241,13 +233,10 @@ main {
 }
 
 @media screen and (max-width: 50em) {
-	.codrops-header {
+	.menu_header {
 		display: block;
 		text-align: center;
 		padding: 2.5rem 1rem 0;
-	}
-	.codrops-header__title {
-		margin: 1rem 0;
 	}
 	.navigation {
 		margin: 0;
