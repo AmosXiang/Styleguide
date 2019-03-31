@@ -1,155 +1,153 @@
-<html>
+<html lang="en">
 
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Hao Xiang's work</title>
-    <meta name="description" content="Works of Hao Xiang">
-    <meta name="keywords" content="game design">
+    <title>Hao's work</title>
+    <meta name="description" content="Portfolio of Hao Xiang">
+    <meta name="keywords" content="game design, android development, character animation">
     <meta name="author" content="Hao Xiang">
-    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
-    <link href="css/work.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/work.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abel|Unica+One|Montserrat|Anton" rel="stylesheet">
+    <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view my portfolio in a modern browser that supports CSS Variables.");</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
 
 </head>
 
-<body>
+<body class="varibal loading">
 
-    <!-- logo -->
-    <div class="clip-wrap">
-        <nav class="navBar">
-           <a href="home.html">Home</a>
-            <a href="work.html">Work</a>
-            <a href="work2.html">Work#2</a>
-        </nav>
+    <div class="page-wrapper">
+        <aside>
 
-    </div>
-
-    <svg class="clip-svg" width="0" height="0">
-        <defs>
-            <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
-                <polygon points="0 1, 0 0, 1 0, 0.8 1" />
-            </clipPath>
-        </defs>
-    </svg>
-    <div class="workVideo">
-        <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video -->
-        <video width="90%" controls>
-            <source src="vido/playTest.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
-    <div class="videoTitle">
-        <h2>Earthquake Narrative Simulation </h2>
-    </div>
-    <div>
-        <h3>Concept & Goal</h3>
-    </div>
-
-    <div class="hoverP column">
-        <div class="content">
-            An immersive educational simulation that create the experience of an earthquake scenario.
-            Our project provides different form of intuitive interaction between the user and the scene.
-            Aimed to aid the annual ShakeOut BC drill for people to experience a simulated
-            earthquake environment to practice and get prepared in case of the real Earthquake.
-        </div>
-        <div>
-            <div>
-                <figure><img src="img/storyBoard.jpg" /></figure>
-                <span>Concept of game flow</span>
+            <div class="button_container ">
+                <div class="name_container">
+                    <div id="dot_beside"></div>
+                    <span id="menu_name">ME<br>NU</span>
+                    <span id="open_name">OP<br>EN</span>
+                </div>
+                <span id="line_one"></span>
+                <span id="line_two"></span>
             </div>
-        </div>
-    </div>
-    <div>
-        <h3>Interaction & VR Prototype</h3>
-    </div>
-    <div class="hoverP column">
-        <div>
-            <figure><img src="img/introOperation.jpg" /></figure>
-            <span>Operation guide</span>
-        </div>
-        <div class="movingRight">
-            <div class="content">
-                <h4>3D GUI</h4>
-                We made the decision to guide audiences in an immersive way that creating a 3D space for them to
-                explore.
-                Following with the arrow and instructions, the audience get familiar with the basic operations.
-                The guide light will lead the audience to the correct position for stepping into the next scene.
 
+            <div class="menu">
+                <nav>
+                    <a href="home.html"><span>Home</span></a>
+                    <a href="work2.html"><span>3D Animation</span></a>
+                    <a href="styleguide.html"><span>StyleGuide</span></a>
+                    <a href=""><span>About</span></a>
+                </nav>
             </div>
-        </div>
-    </div>
 
-    <div class="hoverP column">
-
-
-        <div class="content">
-            <h4> The VR inside the VR</h4>
-            Passing through the guide scene, the audience enters a house and he/she will be guide to the table.
-            A VR helmet on the table will bring the audience to another VR game.
-            The audience was forced to exist the game and a breaking new pop up to claim that the earthquake is coming.
-
-        </div>
-
-        <div class="movingRight">
-            <div>
-                <figure><img src="img/guideLight.jpg" /></figure>
-                <span>Game flow</span>
+            <h1>Earthquake Simulation</h1>
+            <div class="bio">
+                <div class="wrapper">
+                    <img id="video-cover" src="img/warning.jpg" alt="Video title">
+                    <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/N3SO9_DZNjY"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <button id="play" class="play-btn">
+                        <svg enable-background="new 0 0 141.73 141.73" height="141.73px" id="Warstwa_1" version="1.1"
+                            viewBox="0 0 141.73 141.73" width="141.73px" xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g>
+                                <path
+                                    d="M101.628,40.092c-8.22-8.22-19.149-12.746-30.774-12.746c-11.624,0-22.553,4.526-30.772,12.746   c-16.968,16.969-16.967,44.578,0.001,61.546c8.22,8.22,19.149,12.747,30.773,12.747s22.553-4.526,30.772-12.746   s12.747-19.148,12.747-30.773S109.848,48.312,101.628,40.092z M100.214,100.225c-7.842,7.842-18.269,12.16-29.358,12.16   s-21.517-4.319-29.359-12.161c-16.188-16.188-16.188-42.529-0.001-58.718c7.842-7.842,18.269-12.16,29.358-12.16   c11.091,0,21.518,4.318,29.36,12.16c7.842,7.843,12.161,18.269,12.161,29.359S108.056,92.382,100.214,100.225z"
+                                    fill="#8fffff" />
+                                <path
+                                    d="M65.893,55.983c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l13.466,13.466L64.478,84.331   c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293L80.065,71.57   c0.391-0.391,0.391-1.023,0-1.414L65.893,55.983z"
+                                    fill="#8fffff" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
             </div>
-        </div>
-    </div>
-
-
-    <div class="hoverP column">
-        <div class="content">
-            <h4> Education of earthquake</h4>
-            The audience was guide through the instructions on the wall as well to learn about how to save his/her life
-            during an earthquake.
-        </div>
-
-        <div class="movingRight">
-            <div>
-                <figure><img src="img/guideLight2.jpg" /></figure>
-                <span>Earthquake guidelines</span>
+        </aside>
+        <article>
+            <div class="author">
+                <p>Earthquake Narrative Simulation</p>
+                <p><span>IAT445 Final Project</span></p>
             </div>
-        </div>
-    </div>
-
-    <div class="hoverP column">
-        <div>
-            <figure><img src="img/Exit.jpg" /></figure>
-            <span>Exit using the key</span>
-        </div>
-        <div class="movingRight">
-            <div class="content">
-                <h4>Small puzzle</h4>
-                When the earthquake ends, the audience needs to find a flashlight in order to find the key in the dark
-                environment. As the audience found the key, he/she can escape the house by following the guide light.
+            <div class="image"><img src="img/storyBoard.jpg" /></div>
+            <div class="text">
+                <h3>Concept & Goal</h3>
+                <div class="content">
+                    An immersive educational simulation that create the experience of an earthquake scenario.
+                    Our project provides different form of intuitive interaction between the user and the scene.
+                    Aimed to aid the annual ShakeOut BC drill for people to experience a simulated
+                    earthquake environment to practice and get prepared in case of the real Earthquake.
+                </div>
             </div>
-        </div>
-    </div>
 
-    <div class="contentReflection">
-        <h4> Issues encountered during the implementation</h4>
-        The camera shake we first implemented for simulating the earthquake scene was causing motion sickness to our
-        playtesters. 2D GUI is also not appearing on the oculus to provide any information.
-    </div>
+            <div class="image"><img src="img/introOperation.jpg" /></div>
+            <div class="text">
+                <h3>3D GUI</h3>
+                <div class="content">
+                    We made the decision to guide audiences in an immersive way that creating a 3D space for them to
+                    explore.
+                    Following with the arrow and instructions, the audience get familiar with the basic operations.
+                    The guide light will lead the audience to the correct position for stepping into the next scene.
+                </div>
+            </div>
 
-    <div class="contentReflection">
-        <h4>Workarounds, solutions</h4>
-        Use animation to animate the whole scene to shake and add rigid-body to each component in the scene to make
-        them react to the “physics” during the earthquake scenario. We also made 3D text and glowing signs to guide the
-        player around the scenes.
-    </div>
+            <div class="image"><img src="img/guideLight.jpg" /></div>
+            <div class="text">
+                <h3>The VR inside the VR</h3>
+                <div class="content">
+                    Passing through the guide scene, the audience enters a house and he/she will be guide to the table.
+                    A VR helmet on the table will bring the audience to another VR game.
+                    The audience was forced to exist the game and a breaking new pop up to claim that the earthquake is
+                    coming.
+                </div>
+            </div>
 
-    <div class="contentReflection">
-        <h4>Thoughts on final event</h4>
-        The event was welcoming to everyone that cross-by and would like to experience virtual reality. Our team is
-        happy to see so many people are willing to participate our user study and test our project.
-    </div>
+            <div class="image"><img src="img/guideLight2.jpg" /></div>
+            <div class="text">
+                <h3>Education of earthquake</h3>
+                <div class="content">
+                    The audience was guide through the instructions on the wall as well to learn about how to save
+                    his/her life
+                    during an earthquake.
+                </div>
+            </div>
 
-    <footer>
-        <p> © 2019 portfolio by Hao Xiang (Amos) </p>
-    </footer>
+            <div class="image"><img src="img/Exit.jpg" /></div>
+            <div class="text">
+                <h3>Small puzzle</h3>
+                <div class="content">
+                    When the earthquake ends, the audience needs to find a flashlight in order to find the key in the
+                    dark
+                    environment. As the audience found the key, he/she can escape the house by following the guide
+                    light.
+                </div>
+            </div>
+
+            <div class="text">
+                <h3> Issues </h3>
+                The camera shake we first implemented for simulating the earthquake scene was causing motion sickness to
+                our
+                playtesters. 2D GUI is also not appearing on the oculus to provide any information.
+            </div>
+
+            <div class="text">
+                <h3>Workarounds, solutions</h3>
+                Use animation to animate the whole scene to shake and add rigid-body to each component in the scene to
+                make
+                them react to the “physics” during the earthquake scenario. We also made 3D text and glowing signs to
+                guide the
+                player around the scenes.
+            </div>
+
+            <div class="text">
+                <h3>Thoughts on final event</h3>
+                The event was welcoming to everyone that cross-by and would like to experience virtual reality. Our team
+                is
+                happy to see so many people are willing to participate our user study and test our project.
+            </div>
+        </article>
+    </div>
+    <footer></footer>
+    <script src="js/video.js"></script>
 </body>
 
 </html>

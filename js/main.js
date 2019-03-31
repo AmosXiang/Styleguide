@@ -280,3 +280,15 @@ window.onload = function() {
     $('.menu').toggleClass('open');
   });
 };
+
+var wrap = $("#wrap");
+
+wrap.on("scroll", function(e) {
+    
+  if (this.scrollTop > 147) {
+    wrap.addClass("fix_search");
+  } else {
+    wrap.removeClass("fix_search");
+  }
+  
+});

@@ -362,7 +362,7 @@ main {
 	object-fit: cover;
 	margin-left: 36%;
 	bottom: -26rem;
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 1280px) {
