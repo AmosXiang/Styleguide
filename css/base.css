@@ -162,15 +162,39 @@ main {
 	text-align: left;
 }
 
-.content__link {
+.image-container{
 	display: block;
 	position: relative;
 	max-width: 100%;
 	margin: 10vh 0 30vh auto;
+	opacity:1;
+	overflow: hidden;
+}
+/* https://codingislove.com/image-caption-hover-effect/ */
+.caption {
+	position: absolute;
+  bottom: 0px;
+  margin-left: 50%;
+	position:absolute; 
+	opacity:0; 
+	transition:all 300ms ease-in-out;
+ -webkit-transition:all 300ms ease-in-out;
+ -moz-transition:all 300ms ease-in-out;
+ -o-transition:all 300ms ease-in-out;
+ -ms-transition:all 300ms ease-in-out;
 }
 
-.content__link--nobottom {
-	margin-bottom: 10vh;
+.image-container:hover .caption{
+	opacity:1;
+}
+
+ .image-container:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+	opacity: .66;
+	overflow: hidden;
 }
 
 .content__img {
@@ -280,7 +304,7 @@ main {
 	bottom: 0rem;
 	opacity: 0;
 	-webkit-animation: slide1 0.5s forwards;
-  animation: slide1 1.5s forwards ease-in-out, fadein 2.5s forwards ease-in-out; 
+  animation: slide1 1.5s forwards ease-out, fadein 2.5s forwards ease-in-out; 
 
 }
 
@@ -325,8 +349,22 @@ main {
 	margin-left: 58%;
 	bottom: -50rem;
 	opacity: 0;
-	-webkit-animation: slide2 0.5s forwards;
-    animation: slide2 1.5s forwards ease-in-out, fadein 2.5s forwards ease-in-out; 
+	-webkit-animation: slide2 1.5s forwards ease-in-out, fadein 2.5s forwards ease-in-out;
+  animation: slide2 1.5s forwards ease-in-out, fadein 2.5s forwards ease-in-out; 
+}
+
+#scrollSign{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+}
+
+
+#scrollLine{
+	position: absolute;
+	border-left: 1px solid rgb(255, 255, 255);
+	padding-bottom: 100px;
+	left: 50%;
 }
 
 #imgBotDot img{

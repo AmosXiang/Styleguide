@@ -90,8 +90,8 @@
 //fade out when scrolling ---- https://codepen.io/nickcil/pen/sfutl
 
 $(window).scroll(function(){
-    $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
-    $(".top2").css("opacity", 1 - $(window).scrollTop() / 400);
+    $("#scrollSign").css("opacity", 1 - $(window).scrollTop() / 150);
+    $(".groupImage").css("opacity", 1 - $(window).scrollTop() / 400);
   });
 
   // facing cite:https://codepen.io/karlovidek/pen/PQaMOd
