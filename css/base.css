@@ -261,11 +261,7 @@ main {
 }
 
 @media screen and (max-width: 50em) {
-	.menu_header {
-		display: block;
-		text-align: center;
-		padding: 2.5rem 1rem 0;
-	}
+
 	.navigation {
 		margin: 0;
 	}
@@ -590,7 +586,7 @@ canvas{
 	}
 
 	#scrollSign{
-		bottom: -120px;
+		bottom: -80px;
 		left: 50%;
 	}
 	

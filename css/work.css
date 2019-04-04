@@ -196,7 +196,7 @@ footer {
   }
   
   .name_container {
-	font-family: 'Unica One', sans-serif;
+	  font-family: 'Unica One', sans-serif;
     opacity: 1;
     -webkit-transition: opacity 1s ease;
     transition: opacity 1s ease;
@@ -401,4 +401,44 @@ footer {
     opacity: 1;
     -webkit-transition-delay: .7s;
     transition-dealy: .7s;
+  }
+  .back_to_home{
+    opacity: 0;
+  }
+
+  .back_to_home a:link {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .back_to_home a:visited {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .back_to_home a:hover {
+    text-decoration: none;
+    color: #00ffff;
+  }
+  
+  .back_to_home a:active {
+    text-decoration: none;
+    color: #ff00ff;
+  }
+
+  @media screen and (max-width: 700px) {
+  
+    .button_container {
+      display: none;
+    }
+    .menu {
+      display: none;
+    }
+    .back_to_home{
+      opacity: 1;
+      margin-left: 12vw;
+    }
+    .back_to_home #view_next{
+      margin-left: 40vw;
+    }
   }
