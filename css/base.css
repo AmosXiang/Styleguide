@@ -17,14 +17,29 @@ body {
 	overflow: scroll;
 }
 
-a {
+#about_section a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+	cursor: pointer;
+	display:inline;
+	padding-right: 2vh;
+}
+
+#about_section a:hover,
+a:focus {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+.caption a {
 	text-decoration: none;
 	color: white;
 	outline: none;
 	cursor: pointer;
 }
 
-a:hover,
+.caption a:hover,
 a:focus {
 	outline: none;
 }

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+    background: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+}
+
+a{
+    display: block;
+}
+
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+a:visited {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+a:hover {
+    text-decoration: none;
+    color: #00ffff;
+  }
+  
+a:active {
+    text-decoration: none;
+    color: #ff00ff;
+  }
+
+.content {
+    margin: 5%;
+}
+.back_home{
+    margin-top: 5%;
+    font-size: 1.4rem;
+}
