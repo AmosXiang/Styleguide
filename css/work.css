@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Unica+One');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 body {
 	margin: 0;
@@ -219,7 +220,7 @@ footer {
     font-size: 18px;
     letter-spacing: 5px;
     -webkit-transition: all .25s ease;
-    tranisition: all .25s ease;
+    transition: all .25s ease;
   }
   
 
@@ -235,7 +236,7 @@ footer {
     font-size: 18px;
     letter-spacing: 5px;
     -webkit-transition: all .25s ease;
-    tranisition: all .25s ease;
+    transition: all .25s ease;
   }
   
   .button_container:hover #menu_name {
@@ -399,8 +400,8 @@ footer {
   
   .menu.open .icon_container {
     opacity: 1;
-    -webkit-transition-delay: .7s;
-    transition-dealy: .7s;
+    -webkit-transition-delay: 0.7s;
+    transition-delay : 0.7s
   }
   .back_to_home{
     opacity: 0;

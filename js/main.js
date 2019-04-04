@@ -104,8 +104,6 @@ $(window).scroll(function(){
 	// 			TweenMax.to(titleWrap, 0.5, { rotationY: 10 * decimalX, rotationX: 10 * decimalY, ease: Quad.easeOut, transformPerspective: 700, transformOrigin: "center" });
 	// 		}
 
-// change canvas font size
-window.onresize = function(){ location.reload(); }
 
 var canvasFontSzie ;
 var range;
@@ -292,3 +290,11 @@ wrap.on("scroll", function(e) {
   }
   
 });
+
+
+// change canvas font size
+window.onresize = function() { 
+  //  location.reload();
+  canvas.resize();
+  CHAR.init(data.text, canvas.elem.width / 2, canvas.elem.height / 2);
+}
