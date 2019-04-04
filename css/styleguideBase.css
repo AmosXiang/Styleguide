@@ -161,21 +161,10 @@ main {
 
 .interactionTitle{
 	position: absolute;
-	top:0rem;
-	left:25rem;
+	top:0;
+	left: 300px;
 }
 
-.fontAnimation{
-	position: absolute;
-	top:0rem;
-	left:50rem;
-}
-
-.fontAnimation2{
-	position: absolute;
-	top:10rem;
-	left:50rem;
-}
 .fontdemo{
 	font-family: 'Unica One', monospace;
 	display: block;
@@ -330,9 +319,10 @@ main {
 }
 .groupImage{
 	position:relative;
+	margin-right: 400px;
+	margin-top: -290px;
 	font-family:  'Unica One', monospace;
 }
-
 
 
 #img2 img {
@@ -340,8 +330,6 @@ main {
 	width: 450px;
 	-webkit-clip-path: polygon(100% 100%,0 100%,50% 0);
 	clip-path: polygon(100% 100%,0 100%,50% 0);
-	/* -webkit-mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)));
-	mask-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.00,#000000),color-stop(0.15,#000000),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0)),color-stop(0.99,rgba(0,0,0,0))); */
 	height: 510px;
 	object-fit: cover;
 	margin-left: 42%;
@@ -373,31 +361,6 @@ canvas{
 90%  {opacity: 1;}
 }
 
-/* -------------------- intro name & cite: https://codepen.io/samarkandiy/pen/nyLsx*/
-#cyber-speaks {
-	
-	font-family: 'Unica One', monospace;
-	font-size: 50px;
-	font-weight: bold;
-	color: transparent;
-	color:white;
-	white-space: nowrap;	
-	margin: 10px 0 0 10px;
-	overflow: hidden;
-	width: 20em;
-	animation: type	 4s steps(60, end) infinite;
-
-	
-  }
-
-  #cyber-speaks:nth-child(2){
-	animation: type2 1s steps(60, end);
-  }
- 
-  #cyber-speaks span{
-	animation: blink 1s infinite;
-  }
-
   @keyframes type{ 
 	from { width: 0; } 
   } 
@@ -418,15 +381,8 @@ canvas{
   /* -------------------- intro name close --------------------  */
   
 
-	.elementToFadeInAndOut {
-		position: absolute;
-		padding-top: 5%;
-		left:60%;
-	}
-
-
 	.colorpattern{
-		position: absolute;
+		display: block;
 		padding-top: 40%;
 		font-size: 2vmax;
 		left: 2rem;
@@ -460,17 +416,6 @@ canvas{
 		background-color: black; 
 	}
 
-	.elementGlitch {
-		position: absolute;
-		font-family: 'Unica One', monospace ;
-		font-size: 50px;
-		font-weight: bold;
-		color:white;
-		top: 15rem;
-		left:60%;
-		-webkit-animation:glitch 2s linear infinite;
-		animation: glitch 2s linear infinite;
-	}
 	/* https://codepen.io/MrDoctype/pen/oLrBEv */
 	@keyframes glitch{
 	 6%{transform:translate(4px,-10px) skewX(3240deg);}

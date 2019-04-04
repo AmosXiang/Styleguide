@@ -105,7 +105,7 @@ $(window).scroll(function(){
 	// 		}
 
 // change canvas font size
-
+window.onresize = function(){ location.reload(); }
 
 var canvasFontSzie ;
 var range;
@@ -114,7 +114,6 @@ if ( $(window).width() > 680) {
   range = 210;
 } 
 else if ( $(window).width() > 480){
-  window.onresize = function(){ location.reload(); }
   canvasFontSzie = 180;
   range = 180;
 }
