@@ -23,7 +23,7 @@
 	line-height: 1.1;	
 	font-size: 9vmax;
 	color: transparent;
-	text-shadow: 0px 0px 5px #009c9c;
+	text-shadow: 0px 0px 2px #009c9c;
 	white-space: nowrap;
 }
 
@@ -290,3 +290,40 @@ canvas{
     }
 
   }
+
+  @media screen and (max-width: 50em) {
+    .content_Porperty{
+      width:80%;
+      padding-bottom: 200px;
+    }
+
+    .content__text {
+      font-size: 6vmax;
+    }
+  
+    .button_container {
+      top: 13%;
+    }
+
+    .menu nav {
+      top: 100%;
+    }
+
+    .menu {
+      left: 3%;
+    }
+
+    	
+	#scrollSign{
+		position: absolute;
+		bottom: -110px;
+		left: 50%;
+	}
+	
+	
+	#scrollLine{
+		position: absolute;
+		padding-bottom: 100px;
+	}
+  }
+
