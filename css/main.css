@@ -15,9 +15,6 @@
 	white-space: nowrap;
 }
 
-canvas{
-	filter: blur(1px)
-}
 
 .contentLR{
   font-family: 'Lato', sans-serif;
@@ -53,11 +50,6 @@ canvas{
     opacity: 1;
     -webkit-transition: opacity 1s ease;
     transition: opacity 1s ease;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
   }
   

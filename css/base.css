@@ -545,7 +545,7 @@ canvas{
 		width:70%;
 		top:0%;
 		right:15%;
-		filter: blur(2px);
+		/* filter: blur(2px); */
 		opacity: 1;
 		/* -webkit-animation: fade 0.2s linear 2.5s;
 		animation: fade 0.2s linear 2.5s; */
@@ -607,7 +607,7 @@ canvas{
 		width:100%;
 		top:10%;
 		right:0%;
-		filter: blur(2px);
+		/* filter: blur(2px); */
 		opacity: 1;
 	}
 	.elementToFadeInAndOut {
